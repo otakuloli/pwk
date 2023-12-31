@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+/* Text */
+body a{
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+body h2{
+    font-size: 36px;
+}
+body p{
+    color: #897676;
+    font-size: 16px;
+}
+body h3{
+    font-size: 24px;
+    line-height: 36px;
+}
+body h4{
+    font-size: 18px;
+    line-height: 27px;
+    
+}
+body h5{
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: normal;
+}
+
+body .line{
+    border: 2px solid #000000;
+    width: 75.5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+@media only screen and (max-width: 400px){
+    body h2{
+        font-size: 28px;
+    }
+    body h3{
+        font-size: 22px;
+    }
+    body h4{
+        font-size: 18px;
+    }
+    body h5{
+        font-size: 14px;
+    }
+    body p{
+        color: #897676;
+        font-size: 14px;
+    }
+}
+
+
+
+
+/* Utilities css */
+.section-card{
+    border-radius: 18px;
+    background-color: #FFFFFF;
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    cursor: pointer;
+    
+}
+section{
+    margin-top: 100px;
+}
+
+/* NAVBAR */
+.navbar{
+    box-shadow: 8px 4px 16px rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+}
+
+.navbar-brand img{
+    width: 62px;
+    height: 46px;
+}
+.nav-costum{
+    color: #080133;
+    padding: 8px;
+}
+
+/* =============================== INDEX ========================================= */
+
+/* Jumbotron */
+.jumbotron{
+    background-image: url("/assets/img/jumbotron.png");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+}
+ .jumbotron h1{
+    margin-top: 250px;
+    font-weight: 600;
+    font-size: 48px;
+ }
+
+ /* Section-1 */
+
+ .section-1 h2{
+    line-height: 54px;
+ }
+  .section-1 .btn-1{
+      background-color: #FBD573;
+      color: #080133;
+      border-radius: 32px;
+      padding: 14px 30px;
+      margin-top: 20px;
+      font-weight: 500;
+  }
+  .section-1 .btn-1:hover{
+      background-color: #FFFFFF;
+      border: 1px solid #080133;
+      color: #080133;
+      font-weight: 500;
+  }
+
+  /* Sectinon 2 */
+
+.section-2{
+    background-color: #080133;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+ .section-2 h4{
+     color: #FFFFFF;
+     margin-top: 30px;
+ }
+
+ /* Section 3 */
+
+.section-3{
+    text-align: center;
+    background: radial-gradient(100% 163.27% at 2.61% 0%, #FFFDF0 0%, 
+    rgba(255, 253, 240, 0.234375) 19.79%, rgba(255, 253, 240, 0) 100%);
+}
+ .section-3 .section-card{
+     border-radius: 18px;
+     margin-top: 80px;
+     width: 323px;
+     height: 330px;
+     padding: 50px 20px 50px 20px;
+ }
+ 
+
+.section-card:hover{
+     transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+ .section-3 h4{
+     margin-top: 30px;
+ }
+
+ /* Section-4 */
+
+.section-4 .section-card{
+    width: 350px;
+    margin-top: 80px;
+}
+
+ /* Section-5 */
+
+.section-5{
+    background-color: #F5F4F4;
+    padding: 50px 0px 100px 0px;
+}
+
+ .section-5 h3{
+     font-weight: 600;
+ }
+.section-5 .section-card{
+    padding: 50px;
+    margin-top: 60px;
+}
+
+
+/* Blog */
+
+.section-blog{
+    margin-bottom: 100px;
+}
+ .section-blog .content{
+     margin-top: 60px;
+ }
+ .btn-link{
+     color: #080133;
+     border: none;
+     background: none;
+     text-decoration: none;
+     font-weight: 600;
+ }
+ .section-blog .section-card{
+     margin-top: 30px;
+ }
+
+/* Footer */
+
+.footer{
+    background-color: #080133;
+    color: #FFFFFF;
+    padding: 50px 0px 50px 0px;
+}
+ .footer .logo-footer{
+     width: 67px;
+ }
+ .footer h5{
+     font-weight: 400;
+     font-size: 14px;
+ }
+ .footer h4{
+     font-size: 16px;
+ }
+ .footer p{
+     color: #FFFFFF;
+     margin-left: -17px;
+     font-weight: 400;
+ }
+ .footer-icon{
+     width: 20.6px;
+ }
+
+
+@media (min-width: 768px) {
+    .navbar-brand.abs{
+        position: absolute;
+        width: 100%;
+        left: 0;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    /* Navbar */
+    .navbar-nav li a{
+        font-size: 14px;
+    }
+
+    /* Section 1 */
+    .section-1 h2{
+        margin-top: 50px;
+    }
+
+    /* Section 2 */
+
+    .section-2 .section-item{
+        margin-top: 35px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    p{
+        font-size: 14px;
+    }
+
+    /* Nav */
+
+    .navbar-nav img{
+        margin-top: 20px;
+    }
+
+    /* Section 1 */
+    .section-1 h2{
+        font-size: 24px;
+        margin-top: 20px;
+        line-height: normal;
+    }
+
+    .section-1 img{
+        width: 380px;
+    }
+
+    .section-1 .btn-1{
+        padding: 10px 24px;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    /* Section 2 */
+
+    .section-2 img{
+        width: 125px;
+    }
+     .section-2 h4{
+         font-size: 17px;
+     }
+
+    .section-card{
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    /* footer */
+    .footer h3{
+        font-size: 24px;
+    }
+
+    .company-footer{
+        margin-left: 20px
+    }
+}
+
+@media only screen and (max-width: 390px){
+    .jumbotron h1{
+        font-size: 36px;
+        margin-top: 180px
+    }
+     .jumbotron h3{
+         font-size: 20px;
+     }
+    .section-1 img{
+        width: 290px;
+        margin-top: -30px;
+    }
+
+     .section-3 .section-card{
+        width: 290px;
+    }
+
+    .section-4 .section-card{
+        width: 290px;
+    }
+    .footer h3{
+        font-size: 18px;
+    }
+}
+
+
+
+/* ============================ ABOUT ================================== */
+
+/* About Company */
+.section-6{
+    margin-top: 150px;
+}
+.section-6 h4{
+    font-weight: normal;
+}
+.about-company{
+    margin-top: 140px;
+}
+ .about-company img{
+    width: 200px;
+ }
+ .about-company h5{
+     font-weight: 400;
+     color: #897676;
+ }
+
+/* Founder Company */
+.founder-company{
+    background-color: #080133;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+ .founder-company img{
+    width: 200px;
+ }
+ .founder-company h3{
+     font-weight: 400;
+ }
+
+ /* VISI MISI */
+        
+ .visi-misi{
+     background-color: #F5F4F4;
+     padding-top: 100px;
+     padding-bottom: 100px;
+     margin-top: 0px;
+ }
+  .visi-misi h4{
+      font-weight: 400;
+  }
+
+/* Our Team */
+.our-team{
+    padding-bottom: 100px;
+}
+.our-team .content{
+    margin-top: 45px;
+    text-align: center;
+}      
+
+@media only screen and (max-width: 768px){
+
+    /* About Company */
+
+    .about-company .content{
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 568px){
+    .founder-company img{
+        width: 280px;
+    }
+}
+
+/* ================================ CONTACT US ==================================== */
+
+.about-company hr{
+    border: 1px solid #DAD9D9;
+}
+
+.maps-location{
+    margin-bottom: 100px;
+}
+ .maps-location img{
+     max-width: 100%;
+ }
+ .maps-location h4{
+     font-weight: normal;
+ }
+
+.btn-2{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 14px 32px;
+    background-color: #080133;
+    border: none;
+    color: #FFFFFF;
+}
+
+.btn-2:hover{
+    background-color: #FFFFFF;
+      border: 1px solid #080133;
+      color: #080133;
+      font-weight: 500;
+      margin-bottom: -2 px;
+}
+
+.contact-company .content{
+    margin-top: 40px;
+}
+
+.information{
+    padding-bottom: 100px;
+} 
+
+
+/* ======================== PORTOFOLIO ==================== */
+
+.portofolio-company img{
+    
+    width: 100%;
+}
+.portofolio-company .content{
+    position: relative;
+    margin-top: 40px;
+    
+  }
+
+
+.overlay {
+    position: absolute;
+    width: 92.2%;
+    top: 68%;
+    height: 30%;
+    opacity: 0;
+    transition: .5s ease;
+    background: linear-gradient(350.7deg, rgba(8, 1, 51, 0.82) 54.03%, rgba(40, 40, 40, 0) 98.05%);
+  }
+  
+  .portofolio-company .content:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text-overlay{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .img-hover-zoom {
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.img-hover-zoom img {
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+}
+
+.img-hover-zoom:hover img {
+    transform: scale(1.5);
+}
+
+
+
+
+/* ==================== Galley ============= */
+
+.main .carousel-item {
+    height: 620px;
+}
+
+.company-picture h2{
+    margin-top: 60px;
+}
+.company-picture img{
+    width: 100%;
+}
+.gallery-project .pictures{
+    margin-top: 50px;
+}
+.gallery-project img{
+    width: 100%;
+}
+.gallery-project .pictures{   
+    margin-bottom: 100px;    
+}
+
+@media only screen and (max-width: 768px){
+    .main .carousel-item {
+        height: auto;
+        width: 100%;
+    }
+}
+
+
+
+/* Content */
+
+@media only screen and (max-width: 768px){
+    .left-side {
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+}
